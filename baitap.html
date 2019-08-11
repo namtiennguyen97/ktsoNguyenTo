@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap</title>
+</head>
+<body>
+<script>
+    function kiem_tra_snt(n)
+    {
+        let nt = true;
+        if (n < 2){
+            nt = false;
+        }
+        else{
+            // lặp từ 2 tới n-1
+            for (let i = 2; i < n-1; i++)
+            {
+                if (n % i == 0){
+                    nt = false;
+                    break;
+                }
+            }
+        }
+        if (nt == true){
+            document.write(n + " là số nguyên tố <br/>");
+        }
+        else{
+            document.write(n + " không phải là số nguyên tố <br/>");
+        }
+    }
+    kiem_tra_snt(1);
+    kiem_tra_snt(2);
+    kiem_tra_snt(3);
+    kiem_tra_snt(4);
+    kiem_tra_snt(5);
+    kiem_tra_snt(6);
+    kiem_tra_snt(7);
+    kiem_tra_snt(8);
+    kiem_tra_snt(9);
+    kiem_tra_snt(10);
+    kiem_tra_snt(11);
+    kiem_tra_snt(12);
+    kiem_tra_snt(13);
+    kiem_tra_snt(14);
+    kiem_tra_snt(15);
+    kiem_tra_snt(16);
+    kiem_tra_snt(17);
+    kiem_tra_snt(18);
+    kiem_tra_snt(19);
+    kiem_tra_snt(20);
+</script>
+
+</body>
+</html>
